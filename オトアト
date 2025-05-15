@@ -1,2 +1,2 @@
-git remote add origin https://github.com/あなたのユーザー名/otoato.git
+git remote add origin https://github.com/otoato/otoato.git
 git push -u origin master
