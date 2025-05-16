@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>オトアト - otoato -</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<title>オトアト - otoato - アーカイブ</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  body {
+    font-family: "游明朝", YuMincho, "Yu Mincho", serif;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #222;
+    background: #fff;
+  }
+  header h1 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #222;
+    border-bottom: 1px solid transparent;
+  }
+  nav ul li a:hover {
+    border-bottom: 1px solid #222;
+  }
+  main.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  .item p {
+    margin: 0.3rem 0 0 0;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  .item a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>オトアト - otoato - アーカイブ</h1>
-        <p>都市の日常の「音」を発信するメディア</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="contact.html">連絡先</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="gallery">
-        <div class="item">
-            <a href="detail.html"><img src="https://otoato.github.io/Otoato/images/reel1.jpg" alt="Reel 1"></a>
-            <p>テーマ：橋のオト<br>場所：日本橋</p>
-        </div>
-    </main>
+<header>
+  <h1>オトアト - otoato - アーカイブ</h1>
+  <p>都市の日常の「音」を発信するメディア</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="contact.html">連絡先</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="gallery">
+  <div class="item">
+    <a href="detail.html">
+      <img src="https://otoato.github.io/Otoato/images/reel1.jpg" alt="橋のオト" />
+      <p>テーマ：橋のオト<br />場所：日本橋</p>
+    </a>
+  </div>
+  <div class="item">
+    <a href="detail.html">
+      <img src="https://otoato.github.io/Otoato/images/reel2.jpg" alt="雨上がり" />
+      <p>テーマ：雨上がりの音<br />場所：中目黒</p>
+    </a>
+  </div>
+</main>
 </body>
 </html>
+
