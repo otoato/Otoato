@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<title>オトアト - otoato - アーカイブ</title>
-<link rel="stylesheet" href="style.css" />
-<style>
-  body {
-    font-family: "游明朝", YuMincho, "Yu Mincho", serif;
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    color: #222;
-    background: #fff;
-  }
-  header h1 {
-    font-weight: normal;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  header p {
-    margin-top: 0;
-    font-size: 1rem;
-    color: #555;
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: #222;
-    border-bottom: 1px solid transparent;
-  }
-  nav ul li a:hover {
-    border-bottom: 1px solid #222;
-  }
-  main.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-  }
-  .item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-  }
-  .item p {
-    margin: 0.3rem 0 0 0;
-    font-size: 0.85rem;
-    color: #666;
-  }
-  .item a {
-    text-decoration: none;
-    color: inherit;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <title>橋のオト - otoato</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "游明朝", YuMincho, "Yu Mincho", serif;
+      color: #222;
+      background: #fff;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.8;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+    p.meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    img, audio {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+    }
+    nav {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #aaa;
+    }
+    nav a:hover {
+      border-color: #222;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>オトアト - otoato - アーカイブ</h1>
-  <p>都市の日常の「音」を発信するメディア</p>
+
+  <h1>橋のオト</h1>
+  <p class="meta">場所：日本橋</p>
+
+  <audio controls>
+    <source src="https://otoato.github.io/Otoato/audio/sound1.mp3" type="audio/mpeg">
+    お使いのブラウザは音声再生に対応していません。
+  </audio>
+
+  <img src="https://otoato.github.io/Otoato/images/detail1.jpg" alt="現地の写真">
+  <img src="https://otoato.github.io/Otoato/images/map1.png" alt="サウンドマップ">
+  <img src="https://otoato.github.io/Otoato/images/soundsketch1.jpg" alt="サウンドスケッチ">
+
   <nav>
-    <ul>
-      <li><a href="index.html">ホーム</a></li>
-      <li><a href="contact.html">連絡先</a></li>
-    </ul>
+    <a href="index.html">← アーカイブに戻る</a>
   </nav>
-</header>
-<main class="gallery">
-  <div class="item">
-    <a href="detail.html">
-      <img src="https://otoato.github.io/Otoato/images/reel1.jpg?v=2" alt="橋のオト" />
-      <p>テーマ：橋のオト<br />場所：日本橋</p>
-    </a>
-  </div>
-</main>
+
 </body>
 </html>
-
