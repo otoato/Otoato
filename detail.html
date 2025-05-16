@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>橋のオト - otoato</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>橋のオト - オトアト</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: "游明朝", YuMincho, "Yu Mincho", serif;
+      background-color: #ffffff;
       color: #222;
-      background: #fff;
-      max-width: 800px;
-      margin: 4rem auto;
-      padding: 0 1.5rem;
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 1rem;
       line-height: 1.8;
     }
+
     h1 {
       font-size: 1.8rem;
       font-weight: normal;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    p.meta {
+
+    p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .audio-player {
+      margin-top: 2rem;
+    }
+
+    .image {
+      margin: 2rem 0;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a {
       font-size: 0.9rem;
       color: #666;
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
-    img, audio {
-      width: 100%;
-      height: auto;
-      margin-bottom: 2rem;
-      border-radius: 6px;
-    }
-    nav {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-    nav a {
-      color: #333;
       text-decoration: none;
-      border-bottom: 1px solid #aaa;
+      border-bottom: 1px solid transparent;
     }
+
     nav a:hover {
-      border-color: #222;
+      border-bottom: 1px solid #666;
     }
   </style>
 </head>
 <body>
+  <nav><a href="index.html">← 戻る</a></nav>
 
   <h1>橋のオト</h1>
-  <p class="meta">場所：日本橋</p>
+  <p>場所：日本橋<br>録音日：2025年4月</p>
 
-  <audio controls>
-    <source src="https://otoato.github.io/Otoato/audio/sound1.mp3" type="audio/mpeg">
-    お使いのブラウザは音声再生に対応していません。
-  </audio>
-
-  <img src="https://otoato.github.io/Otoato/images/detail1.jpg" alt="現地の写真">
-  <img src="https://otoato.github.io/Otoato/images/map1.png" alt="サウンドマップ">
-  <img src="https://otoato.github.io/Otoato/images/soundsketch1.jpg" alt="サウンドスケッチ">
-
-  <nav>
-    <a href="index.html">← アーカイブに戻る</a>
-  </nav>
-
+  <div class="image">
+  <img src="images/detail1.jpg" alt="橋の風景">
+</div>
+<div class="image">
+  <img src="images/detail2.jpg" alt="街の風景">
+  </div>
+  <div class="audio-player">
+    <audio controls>
+      <source src="audio/sound1.mp3" type="audio/mp3">
+      お使いのブラウザではオーディオ再生に対応していません。
+    </audio>
+  </div>
 </body>
 </html>
