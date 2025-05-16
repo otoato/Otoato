@@ -1,35 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>詳細 - オトアト</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>詳細 - オトアト</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main id="detail"></main>
-  <script>
-    const url = new URL(location.href);
-    const id = url.searchParams.get("id");
+    <header>
+        <h1>詳細ページ</h1>
+    </header>
+    <main>
+        <img src="images/detail1.jpg" alt="詳細画像">
+        <audio controls>
+            <source src="audio/sound1.mp3" type="audio/mp3">
+            お使いのブラウザはオーディオ要素に対応していません。
+        </audio>
+        <h2>サウンドマップ</h2>
+        <img src="images/map1.png" alt="サウンドマップ">
 
-    fetch('data/posts.json')
-      .then(res => res.json())
-      .then(data => {
-        const post = data.posts.find(p => p.id === id);
-        if (post) {
-          document.getElementById("detail").innerHTML = `
-            <h1>${post.title}</h1>
-            <p>${post.location}</p>
-            <img src="${post.image}" style="width: 100%; max-width: 600px;">
-            <audio controls src="${post.audio}"></audio>
-            <section>
-              <h2>サウンドマップ・エデュケーション・スケッチ（準備中）</h2>
-              <p>ここに詳細コンテンツが入ります。</p>
-            </section>
-          `;
-        } else {
-          document.getElementById("detail").innerHTML = "<p>投稿が見つかりませんでした。</p>";
-        }
-      });
-  </script>
+        <h2>サウンドスケッチ</h2>
+        <img src="images/soundsketch1.jpg" alt="サウンドスケッチ">
+    </main>
 </body>
 </html>
