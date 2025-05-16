@@ -1,26 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>詳細 - オトアト</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>橋のオト - otoato</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "游明朝", YuMincho, "Yu Mincho", serif;
+      color: #222;
+      background: #fff;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.8;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+    p.meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    img, audio {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+    }
+    nav {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #aaa;
+    }
+    nav a:hover {
+      border-color: #222;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>詳細ページ</h1>
-    </header>
-    <main>
-        <img src="images/detail1.jpg" alt="詳細画像">
-        <audio controls>
-            <source src="audio/sound1.mp3" type="audio/mp3">
-            お使いのブラウザはオーディオ要素に対応していません。
-        </audio>
-        <h2>サウンドマップ</h2>
-        <img src="images/map1.png" alt="サウンドマップ">
 
-        <h2>サウンドスケッチ</h2>
-        <img src="images/soundsketch1.jpg" alt="サウンドスケッチ">
-    </main>
+  <h1>橋のオト</h1>
+  <p class="meta">場所：日本橋</p>
+
+  <audio controls>
+    <source src="https://otoato.github.io/Otoato/audio/sound1.mp3" type="audio/mpeg">
+    お使いのブラウザは音声再生に対応していません。
+  </audio>
+
+  <img src="https://otoato.github.io/Otoato/images/detail1.jpg" alt="現地の写真">
+  <img src="https://otoato.github.io/Otoato/images/map1.png" alt="サウンドマップ">
+  <img src="https://otoato.github.io/Otoato/images/soundsketch1.jpg" alt="サウンドスケッチ">
+
+  <nav>
+    <a href="index.html">← アーカイブに戻る</a>
+  </nav>
+
 </body>
 </html>
