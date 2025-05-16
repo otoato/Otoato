@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>詳細 - オトアト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="detail"></main>
+  <script>
+    const url = new URL(location.href);
+    const id = url.searchParams.get("id");
+
+    fetch('data/posts.json')
+      .then(res => res.json())
+      .then(data => {
+        const post = data.posts.find(p => p.id === id);
+        if (post) {
+          document.getElementById("detail").innerHTML = `
+            <h1>${post.title}</h1>
+            <p>${post.location}</p>
+            <img src="${post.image}" style="width: 100%; max-width: 600px;">
+            <audio controls src="${post.audio}"></audio>
+            <section>
+              <h2>サウンドマップ・エデュケーション・スケッチ（準備中）</h2>
+              <p>ここに詳細コンテンツが入ります。</p>
+            </section>
+          `;
+        } else {
+          document.getElementById("detail").innerHTML = "<p>投稿が見つかりませんでした。</p>";
+        }
+      });
+  </script>
+</body>
+</html>
