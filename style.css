@@ -1,12 +1,39 @@
 body {
-  background: #f8f8f8;
   font-family: 'Helvetica Neue', sans-serif;
-  color: #333;
-  padding: 2rem;
+  background: #f9f9f9;
+  color: #222;
   line-height: 1.8;
+  margin: 0;
+  padding: 0 2em;
 }
 
-h1 {
+h1, h2 {
   font-weight: normal;
-  font-size: 2rem;
+  margin-top: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+}
+
+.tagline {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2em;
 }
